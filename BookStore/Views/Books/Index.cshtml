@@ -3,14 +3,28 @@
 @{
     ViewData["Title"] = "Index";
 
-    string HasImage(Book book) {
-        if (book.ImageUrl != "" && book.ImageUrl != null) {
 
-            return "fa-solid fa-check"; }
 
-        else {
+    string HasImage(Book book)
 
-            return "fa-solid fa-x"; }
+    {
+
+        if (book.ImageUrl != "" && book.ImageUrl != null)
+
+        {
+
+            return "fa-solid fa-check";
+
+        }
+
+        else
+
+        {
+
+            return "fa-solid fa-x";
+
+        }
+
     }
 }
 
